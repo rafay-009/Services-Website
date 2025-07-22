@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Company Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Company Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="hiring.html">Careers</a></li>
+                    <li><a href="login.html">Login</a></li>
+                   
+                    <li><a href="profile-portal.html">Profile Portal</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Get in Touch</h3>
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="1" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Address:</strong> 1234 Street Name, City, Country</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Email:</strong> info@yourcompany.com</p>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.409789942657!2d-122.42067988468116!3d37.77492927975986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c18a01f0b%3A0x6642b97d6f3bdfd4!2sTwitter%20Inc!5e0!3m2!1sen!2sus!4v1658437000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p>Email: info@yourcompany.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

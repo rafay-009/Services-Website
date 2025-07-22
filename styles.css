@@ -1,0 +1,744 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Main Banner Styles */
+#banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.banner-text h1 {
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service, .testimonial, .project {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.service h3, .project h3 {
+    margin-top: 10px;
+}
+
+.service p, .project p {
+    margin-bottom: 20px;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #45a049;
+}
+
+.newsletter form {
+    display: flex;
+}
+
+.newsletter input[type="email"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .banner-text {
+        width: 90%;
+    }
+}
+
+
+/* Contact Page Styles */
+#contact {
+    padding: 40px 0;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form, .contact-info, .map {
+    margin-bottom: 40px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display:inline;
+    flex-direction: row;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.map iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-form, .contact-info, .map {
+        width: 100%;
+    }
+}
+
+/* Why Choose Us Page Styles */
+#introduction {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.intro-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#differentiators, #success-stories, #awards {
+    padding: 40px 0;
+}
+
+#differentiators h3, #success-stories h3, #awards h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#differentiators ul, #awards ul {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+#differentiators ul li, #awards ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon, .award-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.case-study {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.case-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.case-study h4 {
+    margin-bottom: 10px;
+}
+
+.case-study p {
+    margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #differentiators ul, #awards ul {
+        padding: 0 20px;
+    }
+    
+    .case-study {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .case-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+/* Services Page Styles */
+#services {
+    padding: 40px 0;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    margin-bottom: 15px;
+}
+
+.service-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.service h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.service ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service p, .service ul {
+        padding: 0 20px;
+    }
+}
+
+
+
+
+/* Hiring Vacancy Page Styles */
+#job-listings {
+    padding: 40px 20px;
+}
+
+#job-listings h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.job h3 {
+    margin-bottom: 10px;
+}
+
+.job p {
+    margin-bottom: 10px;
+}
+
+.job .btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.job .btn:hover {
+    background-color: #45a049;
+}
+
+#employee-benefits {
+    padding: 40px 20px;
+}
+
+#employee-benefits h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#employee-benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#employee-benefits ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#company-culture {
+    padding: 40px 20px;
+}
+
+#company-culture h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.culture-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Login Page Styles */
+#login {
+    padding: 60px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#login h2 {
+    margin-bottom: 30px;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login label {
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login .btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#login .btn:hover {
+    background-color: #45a049;
+}
+
+.password-recovery {
+    margin-top: 15px;
+    display: block;
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.password-recovery:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Logout Page Styles */
+#logout {
+    padding: 60px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#logout h2 {
+    margin-bottom: 20px;
+}
+
+#logout p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+#logout .btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#logout .btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Profile Portal Styles */
+#dashboard {
+    padding: 40px 20px;
+}
+
+.dashboard-overview {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#profile, #project-submission, #notifications, #support {
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#profile form, #project-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile form label, #project-form label {
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#profile form input[type="text"],
+#profile form input[type="email"],
+#project-form input[type="text"],
+#project-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#profile form textarea, #project-form textarea {
+    resize: vertical;
+}
+
+#profile .btn, #project-form .btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#profile .btn:hover, #project-form .btn:hover {
+    background-color: #45a049;
+}
+
+.submitted-projects, .notifications-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.submitted-projects li, .notifications-list li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.submitted-projects li a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.submitted-projects li a:hover {
+    text-decoration: underline;
+}
+
+/* Support Section */
+#support p {
+    margin-bottom: 20px;
+}
+
+#support a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#support a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
